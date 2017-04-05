@@ -14,9 +14,10 @@ ReactDOM.render(
     {/*add routes here*/}
     <Route path="/" component={App}>
       <Route path="/about" component={About}/>
-      <Route path="/repos" component={Repos}/>
-      {/*add params new route*/}
-      <Route path="/repos/:userName/:repoName" component={Repo}></Route>
+      <Route path="/repos" component={Repos}>
+        {/*add params new route*/}
+        <Route path="/repos/:userName/:repoName" component={Repo}></Route>
+      </Route>
     </Route>    
   </Router>,
   document.getElementById('root')
