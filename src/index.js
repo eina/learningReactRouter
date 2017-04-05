@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 //module imports
 import Home from './modules/Home';
@@ -11,7 +11,7 @@ import Repos from './modules/Repos';
 import Repo from './modules/Repo';
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     {/*add routes here*/}
     <Route path="/" component={App}>
       {/*home route*/}

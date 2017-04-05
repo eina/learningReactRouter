@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, IndexLink } from 'react-router';
+import { IndexLink } from 'react-router';
 import './App.css';
 
 import NavLink from './modules/NavLink';
